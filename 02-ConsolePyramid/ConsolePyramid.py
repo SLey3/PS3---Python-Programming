@@ -8,11 +8,10 @@ def draw_console_pyramid(height):
     astrik = "*"
     line = ""
 
-    width = (height+1)*2 # multiple by 2 to prevent pyramid going off into the left margin
+    width = (height+1) * 2 # multiple by 2 to prevent pyramid going off into the left margin
     
-    for i in range(height+1):
-        line += astrik.center(width)
-        line += "\n"
+    for i in range(height):
+        line += f"{astrik.center(width)}\n"
         astrik += "**"
     print(line)
 
